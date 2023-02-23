@@ -27,6 +27,9 @@ if (isset($_SESSION['username'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter;:wght@200;300;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -126,6 +129,57 @@ if (isset($_SESSION['username'])) {
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <div class="footer-sec">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-logo-col">
+                            <a class="footer-logo" href="#">
+                                <img src="./public/images/logomain.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
+                            </a>
+                            <p>Our Internship Management program equips you with the skills and knowledge to effectively manage and develop successful internship programs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <h3>Contacts</h3>
+                            <div class="footer-contact-list">
+                                <a href="">Phone: 000-000-0000</a><br>
+                                <a href="">Email: companyemal@domain.com</a>
+                            </div>
+                            <div class="social-logos-footer">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                    <p>© 2023 Company, Inc. All Rights Reserved</p>
+                </div>
+        </div>
+    </footer>
 
 
     <script src="" async defer></script>
