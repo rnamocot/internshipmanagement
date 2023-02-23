@@ -12,6 +12,7 @@ if (isset($_SESSION['username'])) {
 ?>
 
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,52 +35,27 @@ if (isset($_SESSION['username'])) {
 
 <body>
     <!-- Navigations -->
-    <div class='mainNav'>
-                <nav class="navbar">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="./public/images/toga.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
-                        </a>
-                        <div class='c-menu justify-content-end'>
-                            <a class="btn btn-menu-click shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><AiTwotoneAppstore class='menu-icon' /></a>
-                        </div>
-                        <div class="offcanvas offcanvas-end navbar-sticky" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#about">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#skills">Skills</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#projects">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#contact">Contact</a>
-                                    </li>
-                                </ul>
-                                <div class='contact-con-nav'>
-                                    <p>Get in touch</p>
-                                    <div class='c-icons'>
-                                        <a href="mailto:namocotrenie@gmail.com"><FaEnvelope /></a>
-                                        <a href="https://www.linkedin.com/m/in/renie-namocot-43700818b"><FaLinkedin /></a>
-                                        <a href="tel:09613868728"><FaPhoneSquareAlt /></a>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" href="#">
+                <img src="./public/images/toga.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
+            </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav justify-content-between">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- end Navigation -->
     <div class="main-wrapper page-login">
         <!--content-->
         <div class="container content-wrapper loginpage-sec">
@@ -120,36 +96,36 @@ if (isset($_SESSION['username'])) {
 
     <!-- Registraion Page -->
     <!-- The Modal -->
-	<div class="modal fade" id="register">
-		<div class="modal-dialog">
-			<div class="modal-content">
+    <div class="modal fade" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-				<!-- Modal Header -->
-				<div class="modal-header">
-					<h1>Registration</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-				</div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1>Registration</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
 
-				<!-- Modal body -->
+                <!-- Modal body -->
 
-				<div class="modal-body">
+                <div class="modal-body">
 
-					<form action="register_user.php" method="post">
-						<div class="container">
-							<p>Please fill in this form to create an account.</p>
-							<input type="text" placeholder="Enter Name" name="name" id="name" required>
-							<input type="text" placeholder="Enter User Name" name="username" id="username" required>
+                    <form action="register_user.php" method="post">
+                        <div class="container">
+                            <p>Please fill in this form to create an account.</p>
+                            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+                            <input type="text" placeholder="Enter User Name" name="username" id="username" required>
                             <input type="text" placeholder="Enter Email" name="email" id="email" required>
-							<input type="password" placeholder="Enter Password" name="password" id="psw" required>
-							<input type="password" placeholder="Confirm Password" name="confirm_password" id="psw-repeat" required>
-							<p class="p-terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-							<button type="submit" value="Register" class="btn-registerbtn" name="btn-register">Register</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                            <input type="password" placeholder="Confirm Password" name="confirm_password" id="psw-repeat" required>
+                            <p class="p-terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" value="Register" class="btn-registerbtn" name="btn-register">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="" async defer></script>
 </body>
 
