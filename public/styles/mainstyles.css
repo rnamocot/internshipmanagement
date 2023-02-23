@@ -68,7 +68,7 @@ h1{
 }
 h4 {
 	color: #444;
-    font-family: 'Source Sans Pro;', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 	font-size:27px;
 	letter-spacing:1px;	
 }
@@ -78,13 +78,26 @@ h4 {
     width: auto;
     height: 50px;
 }
+.nav-signup {
+    padding: 7px 37px !important;
+    background-color: #0081c9;
+    border-radius: 25px;
+    color: #fff !important;
+    margin-left: 10px;
+}
+a.nav-link{
+    color: #333131;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 /*login page*/
 .page-login{
-    background: linear-gradient(338deg, rgb(244 236 241 / 72%), rgb(252 240 247 / 74%)), url(../images/bg2.jpg) !important;
-	background-position: center;
-    background-size: cover !important;
-	object-fit: cover;
+        background: linear-gradient(68deg, rgb(244 236 241 / 70%), rgb(252 240 247 / 88%)), url(../images/bg2.jpg) !important;
+        background-position: center;
+        background-size: cover !important;
+        object-fit: cover;
 }
 .modal-body p {
     margin-bottom: 10px;
