@@ -148,7 +148,7 @@ if (isset($_SESSION['username'])) {
                             <p>Our Internship Management program equips you with the skills and knowledge to effectively manage and develop successful internship programs.</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="footer-links">
                             <h3>Quick Links</h3>
                             <ul>
@@ -162,7 +162,7 @@ if (isset($_SESSION['username'])) {
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="footer-links">
                             <h3>Contacts</h3>
                             <div class="footer-contact-list">
