@@ -199,7 +199,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     font-family: 'Inter', sans-serif;
     border-top: 0px solid #212529;
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #b7bbbf;
     border-right: none;
     border-left: none;
 }
