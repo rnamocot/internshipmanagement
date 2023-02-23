@@ -200,9 +200,10 @@ div#left-content p{
 div#left-content h1{
     margin-top: 30px;
     font-size: 30px;
-	color: #3c3939;
-	padding-bottom: 30px;
     line-height: 1.2em;
+    color: #0081c9;
+    padding-bottom: 30px;
+    font-family: "Poppins";
 }
 #left-content {
 	padding:50px 100px;
@@ -375,6 +376,9 @@ box-shadow: 1px 1px 33px -6px rgba(0,0,0,0.27);
 
 }
 @media screen and (max-width: 768px) {
+   #left-content {
+    padding: 20px;
+    }
 
 }
 
