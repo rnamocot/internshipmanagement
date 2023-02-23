@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (isset($_SESSION['message'])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
     header("Location: dashboard.php");
@@ -73,14 +69,17 @@ if (isset($_SESSION['username'])) {
                     <div class="signin-heading">
                         <h2>Sign in</h2>
                     </div>
-                    <?php
-                    ?>
                     <form action="login.php" method="post">
                         <div class="form-inner-container">
                             <input type="text" placeholder="Username" name="username" required>
 
                             <input type="password" placeholder="Password" name="password" required>
-
+                            <?php
+                            if (isset($_SESSION['message'])) {
+                                echo "<p class='error-message'>Ivalid credentials. Please try again.</p>";
+                                unset($_SESSION['message']);
+                            }
+                            ?>
                             <button type="submit" name="btn-login">Login</button>
                         </div>
                         <div class="forgot-reg">

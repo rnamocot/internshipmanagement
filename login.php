@@ -16,7 +16,7 @@ if (isset($_POST['btn-login'])) {
     $user = mysqli_fetch_assoc($result);
 
     if (!$user) {
-        $_SESSION['message'] = "User not found";
+        $_SESSION['message'] = "User not found. Invalid credentials";
         header("Location: index.php");
         exit();
     }
