@@ -25,15 +25,14 @@ if (isset($_SESSION['username'])) {
     <!--googlefont-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro;:wght@200;300;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins;:wght@200;300;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter;:wght@200;300;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
     <!-- Navigations -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <a class="navbar-brand" href="#">
                 <img src="./public/images/toga.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
@@ -62,7 +61,7 @@ if (isset($_SESSION['username'])) {
                     <!-- <div class="icon-login">
                         <img src="./public/images/toga.png" id="icon-toga" alt="toga">
                     </div> -->
-                    <h1>Mastering Internship Management:<br> Strategies for Success</h1>
+                    <h1>Mastering <span class="heading-highlight">Internship Management</span><br> Strategies for Success</h1>
                     <h3>You are on your way to becoming excellent educators and mentors for the next generation. As you embark on this journey, we wish you all the best and hope that you gain valuable insights, knowledge, and experience that will help you in your future careers.</h3>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">
@@ -127,77 +126,6 @@ if (isset($_SESSION['username'])) {
         </div>
     </div>
 
-    <footer id="footer" class="footer-1">
-        <div class="main-footer widgets-dark typo-light">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget subscribe no-box">
-                            <h5 class="widget-title">COMPANY NAME<span></span></h5>
-                            <p>About the company, little discription will goes here.. </p>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Quick Links<span></span></h5>
-                            <ul class="thumbnail-widget">
-                                <li>
-                                    <div class="thumb-content"><a href="#.">About</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="#.">Features</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="#.">Pricing</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="#.">Terms and Conditions</a></div>
-                                </li>
-                                <li>
-                                    <div class="thumb-content"><a href="#.">Privacy Policy</a></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Get Started<span></span></h5>
-                            <p>Get access to your full Training and Marketing Suite.</p>
-                            <a class="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-
-                        <div class="widget no-box">
-                            <h5 class="widget-title">Contact Us<span></span></h5>
-
-                            <p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
-                            <ul class="social-footer2">
-                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-facebook"></i></a></li>
-                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-instagram"></i></a></li>
-                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>Copyright Company Name © 2022. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
     <script src="" async defer></script>
