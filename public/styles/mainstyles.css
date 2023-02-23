@@ -72,6 +72,12 @@ h4 {
 	font-size:27px;
 	letter-spacing:1px;	
 }
+/* Navigations */
+
+.mainlogo{
+    width: auto;
+    height: 50px;
+}
 
 /*login page*/
 .page-login{
@@ -198,7 +204,6 @@ div#left-content p{
 	color:#333131;
 }
 div#left-content h1{
-    margin-top: 30px;
     font-size: 30px;
     line-height: 1.2em;
     color: #0081c9;
@@ -206,7 +211,7 @@ div#left-content h1{
     font-family: "Poppins";
 }
 #left-content {
-	padding:50px 100px;
+	padding:50px;
 	/* height: 425px; */
 }
 #right-content{
@@ -219,11 +224,10 @@ div#left-content h1{
     border-radius:30px;
 }
 #left-content h1{
-	margin-top:20px;
 	position:relative;
 }
 #left-content h3{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5em;
 
 }

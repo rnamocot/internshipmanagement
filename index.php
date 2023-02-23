@@ -33,16 +33,63 @@ if (isset($_SESSION['username'])) {
 </head>
 
 <body>
+    <!-- Navigations -->
+    <div class='mainNav'>
+                <nav class="navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="./public/images/toga.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
+                        </a>
+                        <div class='c-menu justify-content-end'>
+                            <a class="btn btn-menu-click shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><AiTwotoneAppstore class='menu-icon' /></a>
+                        </div>
+                        <div class="offcanvas offcanvas-end navbar-sticky" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skills">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#projects">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class='contact-con-nav'>
+                                    <p>Get in touch</p>
+                                    <div class='c-icons'>
+                                        <a href="mailto:namocotrenie@gmail.com"><FaEnvelope /></a>
+                                        <a href="https://www.linkedin.com/m/in/renie-namocot-43700818b"><FaLinkedin /></a>
+                                        <a href="tel:09613868728"><FaPhoneSquareAlt /></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     <div class="main-wrapper page-login">
         <!--content-->
         <div class="container content-wrapper loginpage-sec">
             <div class="row" id="login-section">
 
                 <div class="col-xs-12 col-sm-8 col-md-8" id="left-content">
-                    <div class="icon-login">
+                    <!-- <div class="icon-login">
                         <img src="./public/images/toga.png" id="icon-toga" alt="toga">
-                    </div>
-                    <h1>Mastering Internship Management: Strategies for Success</h1>
+                    </div> -->
+                    <h1>Mastering Internship Management:<br> Strategies for Success</h1>
                     <h3>You are on your way to becoming excellent educators and mentors for the next generation. As you embark on this journey, we wish you all the best and hope that you gain valuable insights, knowledge, and experience that will help you in your future careers.</h3>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">
