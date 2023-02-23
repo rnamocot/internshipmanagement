@@ -35,7 +35,7 @@ if (isset($_SESSION['username'])) {
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <a class="navbar-brand" href="#">
-                <img src="./public/images/toga.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
+                <img src="./public/images/logomain.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
