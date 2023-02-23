@@ -149,9 +149,9 @@ button.reg-btn.btn-primary {
     text-transform: uppercase;
 	color:#0D6EFD;
 }
-.form-inner-container input[type=text]:focus {
+/* .form-inner-container input[type=text]:focus {
   border: 1px solid #0D6EFD;
-}
+} */
 
 #right-content .forgot-reg {
     display: inline-block;
@@ -182,7 +182,7 @@ span.psw {
   padding-top: 15px;
 }
 
-input[type=text], input[type=password] {
+/* input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 10px 0;
@@ -191,6 +191,26 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
   border-radius:50px;
   font-family: 'Inter', sans-serif;
+} */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    border-top: 0px solid #212529;
+    border-bottom: 1px solid #212529;
+    border-right: none;
+    border-left: none;
+}
+textarea:focus, input:focus{
+    outline: none !important;
+}
+*:focus {
+    outline: none;
+}
+input:-internal-autofill-selected {
+    background-color:none !important;
 }
 
 button {
