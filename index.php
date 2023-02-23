@@ -66,7 +66,7 @@ if (isset($_SESSION['username'])) {
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">
                     <div class="signin-heading">
-                        <h2>Sign in</h2>
+                        <h2>Welcome to MIM</h2>
                     </div>
                     <form action="login.php" method="post">
                         <div class="form-inner-container">
@@ -79,7 +79,7 @@ if (isset($_SESSION['username'])) {
                                 unset($_SESSION['message']);
                             }
                             ?>
-                            <button type="submit" name="btn-login">Login</button>
+                            <button type="submit" name="btn-login">SIGN IN</button>
                         </div>
                         <div class="forgot-reg">
                             <span class="psw">Forgot <a href="#">password?</a></span>

@@ -29,7 +29,7 @@ body {
 }
 ol, ul {
 	list-style: none;
-	color:#000;
+	color:#212529;;
 }
 blockquote, q {
 	quotes: none;
@@ -47,27 +47,27 @@ table {
 
 body{ 
 	/* background-color:#fff; */
-	color:#444;
+	color:#212529;;
 	font-size:14px;
 	overflow-x:hidden;
 }
 
 p{
-	color: #444;
+	color: #212529;;
 	font-family: 'Inter', sans-serif;
 	font-size:14px;
 	letter-spacing:normal;
 	line-height: normal
 }
 h1{
-	color: #444;
+	color: #212529;;
   font-family: 'Inter', sans-serif;
 	font-size:25px;
 	letter-spacing:1px;	
 	font-weight:700;
 }
 h4 {
-	color: #444;
+	color: #212529;
     font-family: 'Inter', sans-serif;
 	font-size:27px;
 	letter-spacing:1px;	
@@ -138,8 +138,8 @@ button.reg-btn.btn-primary {
 	text-align: center;
 } */
 .signin-heading{
-    color: #333131;
-	font-size: 25px;
+    color: #212529;
+	font-size: 20px;
 	padding-bottom: 10px;
 }
 .modal-header h1 {
@@ -224,7 +224,7 @@ background: linear-gradient(50deg, rgba(0,129,180,1) 0%, rgba(0,129,201,1) 100%)
 border-radius: 0px 10px 0px 10px;
 }
 div#left-content p{
-	color:#333131;
+	color:#333121252931;
 }
 div#left-content h1{
     font-family: 'Inter', sans-serif;
@@ -243,9 +243,9 @@ div#left-content h1{
 	padding:40px;
 	/* height: 425px; */
     background: #f2f2f2;
-    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
-    -webkit-box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
-    -moz-box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius:30px;
 }
 #left-content h1{
@@ -324,7 +324,7 @@ height:100vh;
 	font-size:17px;
 	font-family: 'Source Sans Pro;', sans-serif;
 	font-weight:500;
-	color:#000;
+	color:#212529;
 }
 #dashboard-right-content{
 	padding:40px 20px;
