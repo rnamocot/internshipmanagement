@@ -66,7 +66,7 @@ if (isset($_SESSION['username'])) {
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">
                     <div class="signin-heading">
-                        <h2>Welcome to MIM</h2>
+                        <h2>Log in to your account</h2>
                     </div>
                     <form action="login.php" method="post">
                         <div class="form-inner-container">
