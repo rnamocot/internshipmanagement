@@ -100,7 +100,9 @@ a.nav-link{
     letter-spacing: .5px;
 }
 
-
+.page-login{
+padding-bottom: 100px;
+}
 
 /*login page*/
 /* .page-login{
@@ -340,113 +342,7 @@ footer p{
 .footer-logo-col {
     padding-right: 30px;
 }
-/*dashboard page*/
-#inner-right-dashboard {
-    padding-right: 18px;
-}
-#inner-right-dashboard li {
-    display: inline;
-    position: relative;
-    left: 0px;
-	float:right;
-}
 
-
-i.bi.bi-person-circle {
-    font-size: 31px;
-	color: #0D6EFD;
-	padding-right:10px;
-}
-i.bi.bi-bell {
-    font-size: 31px;
-    padding-right:10px;
-	color: #0D6EFD;
-}
-
-#dashboard-left-content {
-background: 0D6EFD;
-height:100vh;
-    height: 100vh;
-    padding: 100px 40px;
-}
-#dashboard-left-content .seperator-line {
-	background:#0D6EFD;
-	margin-bottom:10px;
-}
-#dashboard-left-content .log-out {
-    position: absolute;
-    bottom: 20px;
-}
-#dashboard-left-content i.bi {
-    color: #fff;
-    font-size: 17px;
-    padding-right: 7px;
-}
-
-.dashboard-menu ul{
-	line-height: 35px;
-}
-.dashboard-menu a{
-	color:#fff;
-	text-decoration:none;
-	font-size:17px;
-	font-family: 'Inter', sans-serif;
-	letter-spacing:0.5px;
-	font-weight:500;
-	padding-bottom:2px;
-
-}
-
-#dashboard-right-content h1{
-	font-size:25px;
-	font-family: 'Inter', sans-serif;
-	font-weight:700;
-	color:#0D6EFD;
-}
-#dashboard-right-content h2{
-	font-size:17px;
-	font-family: 'Source Sans Pro;', sans-serif;
-	font-weight:500;
-	color:#212529;
-}
-#dashboard-right-content{
-	padding:40px 20px;
-	background: #f8fafd;
-	
-}
-.seperator-line{
-	height:1px;
-	background:#d5d5d5;
-	margin-top:14px;
-}
-.dropdown-container {
-  display: none;
-}
-
-.dropdown-container li a{
-	font-size:15px;
-	font-family: 'Inter', sans-serif;
-	padding: 10px;
-}
-.dropdown-btn active{
-	display:block;
-}
-.dashboard-right-section{
-	background:#fff;
-	padding:20px;
-	margin-top:50px;
-	box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
--webkit-box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
--moz-box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
-}
-.dashboard-right-section th {
-    border: solid #efefef 2px;
-    padding: 10px;
-}
-.dashboard-right-section td {
-    border: solid #efefef 2px;
-    padding: 10px;
-}
 /*student registration*/
 .p-terms{
     text-align: center;
