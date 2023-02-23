@@ -41,7 +41,7 @@ if (isset($_SESSION['username'])) {
                     <div class="icon-login">
                         <img src="./public/images/toga.png" id="icon-toga" alt="toga">
                     </div>
-                    <h1>Welcome</h1>
+                    <h1>Mastering Internship Management: Strategies for Success</h1>
                     <h3>You are on your way to becoming excellent educators and mentors for the next generation. As you embark on this journey, we wish you all the best and hope that you gain valuable insights, knowledge, and experience that will help you in your future careers.</h3>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">

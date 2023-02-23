@@ -198,9 +198,10 @@ div#left-content p{
 }
 div#left-content h1{
     margin-top: 30px;
-    font-size: 50px;
+    font-size: 30px;
 	color: #3c3939;
 	padding-bottom: 30px;
+    line-height: 1.2em;
 }
 #left-content {
 	padding:50px 100px;
@@ -337,6 +338,7 @@ height:100vh;
 }
 .stud-main-wrapper {
     background-image: url(../images/stud-bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

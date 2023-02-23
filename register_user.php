@@ -16,8 +16,6 @@ if (isset($_POST['btn-register'])) {
     // Check if passwords match
     if ($password != $confirm_password) {
         $_SESSION['message'] = "Passwords do not match";
-        header("Location: index.php");
-        exit();
     }
 
     // Hash the password
