@@ -77,7 +77,7 @@ h4 {
 .page-login{
     background: linear-gradient(338deg, rgb(244 236 241 / 72%), rgb(252 240 247 / 74%)), url(../images/bg2.jpg) !important;
 	background-position: center;
-    background-size: cover;
+    background-size: cover !important;
 	object-fit: cover;
 }
 .modal-body p {
