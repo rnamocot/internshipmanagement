@@ -16,9 +16,9 @@ function connectionDB(){
 /*
 function connectionDB(){  
     $host="localhost";
-    $username="u992206180_ojt";
-    $password="Ojt_management123!";
-    $database="u992206180_ojt_management";
+    $username="u992206180_chappie";
+    $password="Tarsierjojo123!";
+    $database="u992206180_internships";
     $con =new mysqli($host, $username,$password, $database );
     if($con->connect_error){
        echo $con->connect_error;
