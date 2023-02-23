@@ -31,6 +31,7 @@ if (isset($_SESSION['username'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro;:wght@200;300;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins;:wght@200;300;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -49,7 +50,7 @@ if (isset($_SESSION['username'])) {
                     <a class="nav-link active" aria-current="page" href="#">About</a>
                     <a class="nav-link" href="#">Features</a>
                     <a class="nav-link" href="#">Pricing</a>
-                    <a href="#"  class="nav-link nav-signup" data-bs-toggle="modal" data-bs-target="#register">Sign up</a>
+                    <a href="#" class="nav-link nav-signup" data-bs-toggle="modal" data-bs-target="#register">Sign up</a>
                 </div>
             </div>
         </div>
@@ -126,6 +127,80 @@ if (isset($_SESSION['username'])) {
             </div>
         </div>
     </div>
+
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">COMPANY NAME<span></span></h5>
+                            <p>About the company, little discription will goes here.. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="#.">About</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Features</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Pricing</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Terms and Conditions</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Privacy Policy</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Get Started<span></span></h5>
+                            <p>Get access to your full Training and Marketing Suite.</p>
+                            <a class="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Contact Us<span></span></h5>
+
+                            <p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
+                            <ul class="social-footer2">
+                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-facebook"></i></a></li>
+                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-instagram"></i></a></li>
+                                <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><i class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright Company Name © 2022. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="" async defer></script>
 </body>
 
