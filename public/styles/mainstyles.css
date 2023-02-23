@@ -140,7 +140,8 @@ button.reg-btn.btn-primary {
 }
 .content-wrapper {
 	width: 100%;
-    min-height: 100vh;
+    padding: 100px 0px;
+    /* min-height: 100vh; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
