@@ -75,7 +75,7 @@ if (isset($_SESSION['username'])) {
                             <input type="password" placeholder="Password" name="password" required>
                             <?php
                             if (isset($_SESSION['message'])) {
-                                echo "<p class='error-message'>Ivalid credentials. Please try again.</p>";
+                                echo "<p class='error-message'> Invalid credentials. Please try again.</p>";
                                 unset($_SESSION['message']);
                             }
                             ?>
