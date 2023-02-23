@@ -258,10 +258,23 @@ div#left-content h1{
 	padding:0px 50px 50px 0px;
 	/* height: 425px; */
 }
-#right-content{
+.banner-img{
+width: auto;
+height: 250px;
+}
+.mainform-login{
+    padding:40px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius:30px;
+}
+.mainform-loginhover{
+    box-shadow: 0px 8px 24px 0 rgb(29 140 242 / 32%);
+    }
+
+/* #right-content{
 	padding:40px;
-	/* height: 425px; */
-    /* background: #f2f2f2; */
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
@@ -269,7 +282,7 @@ div#left-content h1{
 }
 #right-content:hover{
 box-shadow: 0px 8px 24px 0 rgb(29 140 242 / 32%);
-}
+} */
 #left-content h1{
 	position:relative;
 }
@@ -290,15 +303,15 @@ box-shadow: 0px 8px 24px 0 rgb(29 140 242 / 32%);
     font-weight: 600;
 }
 footer a {
-    font-size: 15px;
+    font-size: 14px;
     padding: 2px;
     text-decoration: none;
     color: #212529;
     padding-bottom: 10px;
 }
 footer p{
-    font-size: 15px !important;
-    line-height: 1.3 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
     color: #212529 !important;
 }
 .social-logos-footer a {
@@ -316,6 +329,9 @@ footer p{
     text-align: center;
     padding: 20px 0px;
     font-size: 15px !important;
+}
+.footer-logo-col {
+    padding-right: 30px;
 }
 /*dashboard page*/
 #inner-right-dashboard {
@@ -469,9 +485,64 @@ box-shadow: 1px 1px 33px -6px rgba(0,0,0,0.27);
 
 }
 @media screen and (max-width: 768px) {
-   #left-content {
-    padding: 20px;
+    .content-wrapper {
+        padding: 20px 0px;
     }
+    .banner-img {
+        height: 130px;
+    }
+    .teacher-div {
+        text-align: center;
+    }
+    div#left-content h1 {
+        text-align: center;
+        font-size: 30px!important;
+    }
+    div#left-content {
+        text-align: center;
+    }
+    div#right-content {
+        padding: 0px 30px;
+    }
+    .footer-logo-col {
+        text-align: center;
+    }
+    .footer-logo-col {
+        text-align: center;
+        padding-bottom: 30px;
+    padding-right: 0px;
+    }
+    .footer-links {
+        text-align: center;
+    }
+    .footer-links {
+        text-align: center;
+        padding: 20px 0px;
+    }
+    #left-content {
+        padding: 30px;
+    }
+    .mainform-login {
+        text-align: center;
+    }
+    /* nav in mobile */
+    .navbar-toggler{
+        width: auto !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+    .navbar-toggler:hover {
+            background-color: #0d6efd00 !important;
+    }
+    .navbar-toggler{
+    border: none !important;
+    }
+    .nav-signup {
+        margin-left: 0px;
+        width: 130px;
+    }
+    /* nav in mobile */
 
 }
 

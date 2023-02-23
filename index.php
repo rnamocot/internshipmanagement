@@ -38,7 +38,7 @@ if (isset($_SESSION['username'])) {
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <a class="navbar-brand" href="#">
-                <img src="./public/images/logomain.png" class="d-inline-block align-text-top mainlogo" alt="Logo" />
+                <img src="./public/images/logomain.png" class=" mainlogo" alt="Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,6 +53,7 @@ if (isset($_SESSION['username'])) {
             </div>
         </div>
     </nav>
+    
 
     <!-- end Navigation -->
     <div class="main-wrapper page-login">
@@ -66,8 +67,12 @@ if (isset($_SESSION['username'])) {
                     </div> -->
                     <h1>Mastering <span class="heading-highlight">Internship Management</span><br> Strategies for Success</h1>
                     <h3>You are on your way to becoming excellent educators and mentors for the next generation. As you embark on this journey, we wish you all the best and hope that you gain valuable insights, knowledge, and experience that will help you in your future careers.</h3>
+                    <div class="teacher-div" href="#">
+                        <img src="./public/images/teacher2.png" class="banner-img" alt="Logo" />
+                    </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4" id="right-content">
+                    <div class="mainform-login">
                     <div class="signin-heading">
                         <h2>Log in to your account</h2>
                     </div>
@@ -91,6 +96,9 @@ if (isset($_SESSION['username'])) {
                             </div>
                     </form>
                 </div>
+
+                    </div>
+                    
             </div>
         </div><!--end of login section-->
     </div><!--end of content wrapper-->
@@ -141,7 +149,7 @@ if (isset($_SESSION['username'])) {
                             <p>Our Internship Management program equips you with the skills and knowledge to effectively manage and develop successful internship programs.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="footer-links">
                             <h3>Quick Links</h3>
                             <ul>
@@ -155,16 +163,18 @@ if (isset($_SESSION['username'])) {
 
                         </div>
                     </div>
-                    <div class="col-md-3">
-
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="footer-links">
                             <h3>Contacts</h3>
                             <div class="footer-contact-list">
                                 <a href="">Phone: 000-000-0000</a><br>
                                 <a href="">Email: companyemal@domain.com</a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <h3>Socials</h3>
                             <div class="social-logos-footer">
                                 <a href="#" class="fa fa-facebook"></a>
                                 <a href="#" class="fa fa-twitter"></a>
@@ -176,8 +186,8 @@ if (isset($_SESSION['username'])) {
                 </div>
             </div>
             <div class="copyrights">
-                    <p>© 2023 Company, Inc. All Rights Reserved</p>
-                </div>
+                <p>© 2023 Company, Inc. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 
