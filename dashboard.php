@@ -134,6 +134,7 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </script>
 
+<!-- Logout  -->
 <!-- Bootstrap modal code for the confirmation dialog -->
 <div class="modal fade" id="logout-confirm-modal" tabindex="-1" role="dialog" aria-labelledby="logout-confirm-modal-label" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -148,8 +149,8 @@ for (i = 0; i < dropdown.length; i++) {
         Are you sure you want to log out?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" id="logout-confirm-button">Logout</button>
+        <a type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+        <a type="button" class="btn btn-primary" id="logout-confirm-button">Logout</a>
       </div>
     </div>
   </div>
@@ -181,5 +182,7 @@ for (i = 0; i < dropdown.length; i++) {
     window.location.href = 'logout.php';
   });
 </script>
+
+<!-- END - logout  -->
 
 </html>
