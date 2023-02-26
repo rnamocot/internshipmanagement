@@ -68,7 +68,7 @@ if (!isset($_SESSION['username'])) {
 							<li><i class="bi bi-person-badge-fill"></i><a href="#">My Profile</a></li>
 							<li><i class="bi bi-bell-fill"></i><a href="#">Notifications</a></li>
 							<li><i class="bi bi-gear-fill"></i><a href="#">Settings</a></li>	
-							<li><a href="logout.php"class="log-out" name="log-out"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>	
+							<li><a href="#"class="log-out" id="logout-link"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>	
 											
 						</ul>
 						
@@ -130,6 +130,21 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+// logout button
+    // get a reference to the logout link
+    var logoutLink = document.getElementById('logout-link');
+
+    // add a click event listener to the logout link
+    logoutLink.addEventListener('click', function(event) {
+        // prevent the link from navigating to its href value
+        event.preventDefault();
+        // show a confirmation pop-up
+        if (confirm("Are you sure you want to logout?")) {
+            // redirect to the logout page
+            window.location.href = "logout.php";
+        }
+    });
 </script>
 
 <?php 
