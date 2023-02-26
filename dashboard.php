@@ -68,7 +68,8 @@ if (!isset($_SESSION['username'])) {
 							<li><i class="bi bi-person-badge-fill"></i><a href="#">My Profile</a></li>
 							<li><i class="bi bi-bell-fill"></i><a href="#">Notifications</a></li>
 							<li><i class="bi bi-gear-fill"></i><a href="#">Settings</a></li>	
-							<li><a href="logout.php"class="log-out"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>					
+							<li><a href=""class="log-out"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>	
+											
 						</ul>
 						
 					</div>
@@ -131,5 +132,16 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </script>
 
+<?php 
+// check if the logout button is clicked
+if (isset($_POST['logout'])) {
+    // show a confirmation pop-up
+    echo '<script>
+            if (confirm("Are you sure you want to logout?")) {
+                window.location.href = "logout.php";
+            }
+        </script>';
+}
+?>
 
 </html>
