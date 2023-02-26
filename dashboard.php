@@ -149,8 +149,8 @@ for (i = 0; i < dropdown.length; i++) {
         Are you sure you want to log out?
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
-        <a type="button" class="btn btn-primary" id="logout-confirm-button">Logout</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="logout-confirm-button">Logout</button>
       </div>
     </div>
   </div>
