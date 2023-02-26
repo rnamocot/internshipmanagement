@@ -134,7 +134,7 @@ for (i = 0; i < dropdown.length; i++) {
 
 <?php 
 // check if the logout button is clicked
-if (isset($_POST['logout'])) {
+if (isset($_POST['log-out'])) {
     // show a confirmation pop-up
     echo '<script>
             if (confirm("Are you sure you want to logout?")) {
