@@ -26,7 +26,8 @@ if (!isset($_SESSION['username'])) {
 	<!--font awsome-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<!-- Custom stylesheet -->
-    <link href="./public/styles/mainstyles.css" rel="stylesheet">
+	<link href="./public/styles/mainstyles.css" rel="stylesheet">
+    <link href="./public/styles/dashboard.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./public/images/toga.png">
 	<!--googlefont-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,28 +41,32 @@ if (!isset($_SESSION['username'])) {
 		<div class="dashboard-content-wrapper">
 			<div class="row">		
 				<div class="col-xs-12 col-sm-2 col-md-2" id="dashboard-left-content">
-				<h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
+				<div class="dashboard-heading">
+					<h2>Welcome</h2>
+					<h3><?php echo $_SESSION['username']; ?></h3>
+				</div> 
+				
 					<div class="dashboard-menu">
 						<ul>
-							<li><i class="bi bi-house"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-file-earmark-bar-graph"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-pencil-square"></i><a class="dropdown-btn" href="#">Menu Dropdown <i class="bi bi-chevron-down"></i></a>
+							<li><i class="bi bi-house"></i><a href="#">Home</a></li>
+							<li><i class="bi bi-file-earmark-bar-graph"></i><a href="#">Leads</a></li>
+							<li><i class="bi bi-person-lines-fill"></i><a class="dropdown-btn" href="#">Accounts<i class="bi bi-chevron-down"></i></a>
 							<div class="dropdown-container">
 							<ul>
-							<li><i class="bi bi-cloud-download"></i><a href="#">Link 1</a></li>
-							<li><i class="bi bi-person"></i><a href="#">Link 2</a></li>
-							<li><i class="bi bi-pencil-square"></i><a href="#">Link 3</a></li>
+							<li><i class="bi bi-person-workspace"></i><a href="#">Teachers</a></li>
+							<li><i class="bi bi-person"></i><a href="#">Students</a></li>
 							</ul>
 						  </div></li>
-							<li><i class="bi bi-person"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-qr-code-scan"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-speedometer"></i><a href="#">Menu</a></li>
+							<li><i class="bi bi-file-earmark-text-fill"></i><a href="#">Logs</a></li>
+							<li><i class="bi bi-qr-code-scan"></i><a href="#">QR Scans</a></li>
+							<li><i class="bi bi-calendar3"></i><a href="#">Calendar</a></li>
 							<div class="seperator-line"></div>
-							<li><i class="bi bi-file-earmark-arrow-down"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-person-add"></i><a href="#">Menu</a></li>
-							<li><i class="bi bi-database-add"></i><a href="#">Menu</a></li>							
+							<li><i class="bi bi-person-badge-fill"></i><a href="#">My Profile</a></li>
+							<li><i class="bi bi-bell-fill"></i><a href="#">Notifications</a></li>
+							<li><i class="bi bi-gear-fill"></i><a href="#">Settings</a></li>	
+							<li><a href="logout.php"class="log-out"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>					
 						</ul>
-						<a href="logout.php"class="log-out"><i class="bi bi-power"></i>LOGOUT</a>
+						
 					</div>
 
 				</div>				
