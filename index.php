@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) {
 
     <!-- Custom stylesheet -->
     <link href="./public/styles/mainstyles.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./public/images/logomain.png">
+    <link rel="icon" type="image/x-icon" href="./public/images/fav.png">
     <!--googlefont-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
