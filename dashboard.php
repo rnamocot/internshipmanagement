@@ -1,5 +1,9 @@
 <?php
+include_once "./includes/dashboardconfig.php";
 session_start();
+
+// $fullname = new queryfullname();
+// $usermainname = $fullname->userfullname($fullname);
 
 // Check if user is logged in
 if (!isset($_SESSION['username'])) {
@@ -28,7 +32,7 @@ if (!isset($_SESSION['username'])) {
 	<!-- Custom stylesheet -->
 	<link href="./public/styles/mainstyles.css" rel="stylesheet">
     <link href="./public/styles/dashboard.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./public/images/toga.png">
+	<link rel="icon" type="image/x-icon" href="./public/images/logomain.png">
 	<!--googlefont-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +47,7 @@ if (!isset($_SESSION['username'])) {
 				<div class="col-xs-12 col-sm-2 col-md-2" id="dashboard-left-content">
 				<div class="dashboard-heading">
 					<h2>Welcome</h2>
-					<h3><?php echo $_SESSION['username']; ?></h3>
+					<h3><?php  echo $_SESSION['username']; ?></h3>
 				</div> 
 				
 					<div class="dashboard-menu">
@@ -126,4 +130,76 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
+
+<div class="dashboard">
+    <div class="sidebar">
+      <ul>
+        <li id="names">Names</li>
+        <li id="accounts">Accounts</li>
+        <li id="settings">Settings</li>
+        <li id="logs">Logs</li>
+      </ul>
+    </div>
+    <div class="table">
+      <table id="table-content">
+        <!-- Table content will be dynamically generated here -->
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const namesTable = '<tr><td>John</td><td>Doe</td></tr><tr><td>Jane</td><td>Smith</td></tr>';
+    const accountsTable = '<tr><td>123456</td><td>$1000</td></tr><tr><td>789012</td><td>$500</td></tr>';
+    const settingsTable = '<tr><td>Language</td><td>English</td></tr><tr><td>Theme</td><td>Light</td></tr>';
+    const logsTable = '<tr><td>2022-02-25</td><td>Login</td></tr><tr><td>2022-02-24</td><td>Logout</td></tr>';
+
+    const namesButton = document.getElementById('names');
+    const accountsButton = document.getElementById('accounts');
+    const settingsButton = document.getElementById('settings');
+    const logsButton = document.getElementById('logs');
+    const tableContent = document.getElementById('table-content');
+
+    namesButton.addEventListener('click', () => {
+      tableContent.innerHTML = namesTable;
+    });
+
+    accountsButton.addEventListener('click', () => {
+      tableContent.innerHTML = accountsTable;
+    });
+
+    settingsButton.addEventListener('click', () => {
+      tableContent.innerHTML = settingsTable;
+    });
+
+    logsButton.addEventListener('click', () => {
+      tableContent.innerHTML = logsTable;
+    });
+
+    // Initialize with default table
+    tableContent.innerHTML = namesTable;
+  </script>
+  <style>
+    .dashboard {
+      display: flex;
+    }
+    .sidebar {
+      flex: 1;
+      margin-right: 10px;
+    }
+    .table {
+      flex: 2;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+  </style>
 </html>
