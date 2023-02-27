@@ -70,7 +70,7 @@ if (!isset($_SESSION['username'])) {
 							<li><i class="bi bi-person-badge-fill"></i><a href="#">My Profile</a></li>
 							<li><i class="bi bi-bell-fill"></i><a href="#">Notifications</a></li>
 							<li><i class="bi bi-gear-fill"></i><a href="#">Settings</a></li>	
-							<li><a href="#"class="log-out" id="logout-link"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>	
+							<li><a href="logout.php"class="log-out" id="logout-link"><i class="bi bi-box-arrow-left"></i>Logout</a>	</li>	
 											
 						</ul>
 						
@@ -157,34 +157,35 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </script>
 
+
 <!-- Logout  -->
 
 
 <!-- JavaScript code to show the confirmation modal and handle the logout action -->
 <script>
-  // get a reference to the logout link
-  var logoutLink = document.getElementById('logout-link');
+//   // get a reference to the logout link
+//   var logoutLink = document.getElementById('logout-link');
 
-  // add a click event listener to the logout link
-  logoutLink.addEventListener('click', function(event) {
-    // prevent the link from navigating to its href value
-    event.preventDefault();
+//   // add a click event listener to the logout link
+//   logoutLink.addEventListener('click', function(event) {
+//     // prevent the link from navigating to its href value
+//     event.preventDefault();
 
-    // show the confirmation modal
-    $('#logout-confirm-modal').modal('show');
-  });
+//     // show the confirmation modal
+//     $('#logout-confirm-modal').modal('show');
+//   });
 
-  // get a reference to the logout confirm button
-  var logoutConfirmButton = document.getElementById('logout-confirm-button');
+//   // get a reference to the logout confirm button
+//   var logoutConfirmButton = document.getElementById('logout-confirm-button');
 
-  // add a click event listener to the logout confirm button
-  logoutConfirmButton.addEventListener('click', function(event) {
-    // hide the confirmation modal
-    $('#logout-confirm-modal').modal('hide');
+//   // add a click event listener to the logout confirm button
+//   logoutConfirmButton.addEventListener('click', function(event) {
+//     // hide the confirmation modal
+//     $('#logout-confirm-modal').modal('hide');
 
-    // unset the session and redirect to the login page
-    window.location.href = 'logout.php';
-  });
+//     // unset the session and redirect to the login page
+//     window.location.href = 'logout.php';
+//   });
 </script>
 
 <!-- END - logout  -->
