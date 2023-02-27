@@ -55,7 +55,7 @@ if (!isset($_SESSION['username'])) {
 					<div class="dashboard-menu">
 						<ul>
 							<li><i class="bi bi-house"></i><a href="#">Home</a></li>
-							<li><i class="bi bi-file-earmark-bar-graph"></i><a href="#">Leads</a></li>
+							<li><i class="bi bi-file-earmark-bar-graph"></i><a href="#">Supervisors</a></li>
 							<li><i class="bi bi-person-lines-fill"></i><a class="dropdown-btn" href="#">Accounts<i class="bi bi-chevron-down"></i></a>
 							<div class="dropdown-container">
 							<ul>
