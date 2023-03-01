@@ -26,7 +26,7 @@ if (isset($_POST['btn-login'])) {
         // Set session variables
         $_SESSION['username'] = $username;
         $_SESSION['message'] = "You are now logged in";
-        header("Location: dashboard.php");
+        header("Location: main.php");
         exit();
     } else {
         $_SESSION['message'] = "Incorrect password";
