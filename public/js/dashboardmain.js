@@ -40,5 +40,8 @@ selectedLink.classList.add('active');
 }
  
 
+// Modal js
+// END - Modal js
+
 
 

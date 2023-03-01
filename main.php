@@ -19,6 +19,7 @@ if (!isset($_SESSION['username'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./public/styles/main.css">
+  <link rel="icon" type="image/x-icon" href="./public/images/fav.png">
 </head>
 
 <body>
@@ -78,24 +79,26 @@ if (!isset($_SESSION['username'])) {
         <span class="tooltip">Setting</span>
       </li>
       <li>
-        <a href="logout.php" onclick="logout('logout')">
+        <a href="#" onclick="showLogoutModal()">
           <i class='bx bx-power-off'></i>
           <span class="title">Logout</span>
         </a>
         <span class="tooltip">Logout</span>
       </li>
     </ul>
+    
+    <!-- Logout button -->
   </div>
   <!-- Right Side Contents -->
 
- <!-- Default content -->
+  <!-- Default content -->
   <div id="default-content" class="db-right-content">
     <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
     <div class="home-div-">
 
     </div>
   </div>
-   <!-- END - Default content -->
+  <!-- END - Default content -->
 
   <section id="leads" class="db-right-content">
     <h1>Leads Content</h1>
@@ -121,12 +124,19 @@ if (!isset($_SESSION['username'])) {
     <h1>Setting Content</h1>
     <p>Here are the settings.</p>
   </section>
-
-  <section id="logout" class="db-right-content">
-    <h1>Logout Content</h1>
-    <p>You have been logged out.</p>
-  </section>
   <!-- End Side Contents -->
+
+
+
+  <!-- Logout modal -->
+
+
+<style>
+ /* Modal styles */
+
+</style>
+  <!-- END - Logout modal -->
+
   <script src="./public/js/dashboardmain.js" async defer></script>
 </body>
 
