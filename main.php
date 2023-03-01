@@ -8,6 +8,7 @@ if (!isset($_SESSION['username'])) {
   exit();
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -20,14 +21,16 @@ if (!isset($_SESSION['username'])) {
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./public/styles/main.css">
   <link rel="icon" type="image/x-icon" href="./public/images/fav.png">
-  <script src="https://cdn.jsdelivr.net/npm/slugify"></script>
+  <!-- Qr code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 </head>
 
 <body>
   <div class="sidebarleft expand">
     <div class="nav-header">
-      <p class="logo">OJT <br>
-        <span class="db-username" style="color:#1e35cc;">Management</span>
+      <p class="logo">
+        <img src="./public/images/logomain.png" class="dashboard-logo" alt="Logo" /> <br>
+        <span class="db-username" style="color:#1e35cc;">Dashboard</span>
       </p>
       <i class="bx bx-menu-alt-right btn-menu"></i>
     </div>
@@ -91,71 +94,83 @@ if (!isset($_SESSION['username'])) {
     <!-- Logout button -->
   </div>
   <!-- Right Side Contents -->
-
-  <!-- Default content -->
-  <div id="default-content" class="db-right-content">
+  <div class="main-db-right db-right-content">
     <div class="db-right-header">
       <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
     </div>
-    <div class="home-db-div">
-      <div class="table-header">
-        <h2>OJT-Employer List</h2>
-        <input class="form-control search-box" type="text" placeholder="Search name...">
+    <!-- Default content -->
+    <div id="default-content">
+      <div class="home-db-div">
+        <div class="table-header">
+          <h2>OJT-Employer List</h2>
+          <input class="form-control search-box" type="text" placeholder="Search name...">
+        </div>
+        <table>
+          <tr>
+            <th>Employee Name</th>
+            <th>Supervisor Name</th>
+            <th>Phone </th>
+            <th>Email</th>
+            <th>Address</th>
+          </tr>
+          <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
+        </table>
       </div>
-      <table>
-        <tr>
-          <th>Employee Name</th>
-          <th>Supervisor Name</th>
-          <th>Phone </th>
-          <th>Email</th>
-          <th>Address</th>
-        </tr>
-        <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
-      </table>
     </div>
+    <!-- END - Default content -->
+    <!-- SUPERVISOR CODE RIGHT SIDE CONTENT -->
+    <section id="supervisor">
+      <div class="home-db-div">
+        <div class="table-header">
+          <h2>OJT-Employee</h2>
+          <input class="form-control search-box" type="text" placeholder="Search name...">
+        </div>
+        <table>
+          <tr>
+            <th>Employee Name</th>
+            <th>Supervisor Name</th>
+            <th>Phone </th>
+            <th>Email</th>
+            <th>Address</th>
+          </tr>
+          <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
+        </table>
+      </div>
+    </section>
+    <!-- END - SUPERVISOR CODE RIGHT SIDE CONTENT -->
+
+    <section id="teacher">
+      <h1>Teacher Content</h1>
+      <p>Here are the teachers.</p>
+    </section>
+
+    <section id="students">
+      <h1>Students Content</h1>
+      <p>Here are the students.</p>
+    </section>
+
+    <!-- QR CODE RIGHT SIDE CONTENT -->
+    <section id="qr-code">
+      <div class="qr-db-content">
+        <h1>Your generated link</h1>
+        <h4><span style="color:#0D6EFD;">Note:</span> This qr code has a unique link for ojt's employer details registration</h4>
+        <!-- <a id="myAnchor" href="#">Register</a> -->
+        <?php
+        include "./includes/qrcode-generator.php";
+        // Generate QR code for the URL 'https://example.com'
+        generateQRCodeLink('http://localhost/internshipmanagement/main.php');
+        ?>
+      </div>
+    </section>
+        <!-- END QR CODE RIGHT SIDE CONTENT -->
+
+    <section id="setting">
+      <h1>Setting Content</h1>
+      <p>Here are the settings.</p>
+    </section>
+
   </div>
-  <!-- END - Default content -->
 
-  <section id="supervisor" class="db-right-content">
-    <div class="db-right-header">
-      <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
-    </div>
-    <div class="home-db-div">
-      <h1>Supervisor Accounts</h1>
-      <input class="form-control search-box" type="text" placeholder="Search name...">
-      <table>
-        <tr>
-          <th>Employee Name</th>
-          <th>Supervisor Name</th>
-          <th>Phone </th>
-          <th>Email</th>
-          <th>Address</th>
-        </tr>
-        <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
-      </table>
-    </div>
-  </section>
-
-  <section id="teacher" class="db-right-content">
-    <h1>Teacher Content</h1>
-    <p>Here are the teachers.</p>
-  </section>
-
-  <section id="students" class="db-right-content">
-    <h1>Students Content</h1>
-    <p>Here are the students.</p>
-  </section>
-
-  <section id="qr-code" class="db-right-content">
-    <h1>QR Code Content</h1>
-    <p>Here is the QR code.</p>
-    <a id="myAnchor" href="#">Register</a>
-  </section>
-
-  <section id="setting" class="db-right-content">
-    <h1>Setting Content</h1>
-    <p>Here are the settings.</p>
-  </section>
   <!-- End Side Contents -->
 
 
@@ -170,15 +185,5 @@ if (!isset($_SESSION['username'])) {
 
   <script src="./public/js/dashboardmain.js" async defer></script>
 </body>
-
-<script>
-  const slugify = new Slugify();
-  const name = 'John Doe';
-  const slug = slugify.slugify(name);
-
-  const registrationUrl = 'registration.php';
-  const anchorTag = document.getElementById('myAnchor');
-  anchorTag.href = registrationUrl + '?slug=' + slug;
-</script>
 
 </html>

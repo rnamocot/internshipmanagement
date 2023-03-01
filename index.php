@@ -190,8 +190,6 @@ if (isset($_SESSION['username'])) {
         </div>
     </footer>
 
-
-    <script src="" async defer></script>
 </body>
 
 </html>
