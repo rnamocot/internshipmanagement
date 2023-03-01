@@ -16,26 +16,26 @@ function changebtn() {
 
 function showContent(content) {
   // Hide the default content
-  var defaultContent = document.querySelector('#default-content');
+ const defaultContent = document.querySelector('#default-content');
   defaultContent.style.display = 'none';
 
   // Hide all sections
-  var sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section');
   sections.forEach(function(section) {
     section.style.display = 'none';
   });
 
   // Show the relevant section
-  var section = document.querySelector('#' + content);
+  const section = document.querySelector('#' + content);
   section.style.display = 'block';
 
   // Update the active link
-  var links = document.querySelectorAll('.sidebar li a');
+  const links = document.querySelectorAll('.sidebar li a');
   links.forEach(function(link) {
     link.classList.remove('active');
   });
 // Add the active class to the selected link
-var selectedLink = document.querySelector('.sidebar li a[href="#' + content + '"]');
+const selectedLink = document.querySelector('.sidebar li a[href="#' + content + '"]');
 selectedLink.classList.add('active');
 }
  

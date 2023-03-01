@@ -1,5 +1,5 @@
 <?php
-include_once "./includes/dashboardconfig.php";
+require_once "./includes/dashboardconfig.php";
 session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -44,18 +44,18 @@ if (!isset($_SESSION['username'])) {
         <span class="tooltip">Home</span>
       </li>
       <li>
-        <a href="#" onclick="showContent('leads')">
+        <a href="#" onclick="showContent('supervisor')">
           <i class='bx bx-spreadsheet'></i>
-          <span class="title">Leads</span>
+          <span class="title">Supervisor</span>
         </a>
-        <span class="tooltip">Leads</span>
+        <span class="tooltip">Supervisor</span>
       </li>
       <li>
         <a href="#" onclick="showContent('teacher')">
           <i class='bx bx-user'></i>
-          <span class="title">Teacher</span>
+          <span class="title">Teachers</span>
         </a>
-        <span class="tooltip">Teacher</span>
+        <span class="tooltip">Teachers</span>
       </li>
       <li>
         <a href="#" onclick="showContent('students')">
@@ -74,19 +74,19 @@ if (!isset($_SESSION['username'])) {
       <li>
         <a href="#" onclick="showContent('setting')">
           <i class="bx bx-cog"></i>
-          <span class="title">Setting</span>
+          <span class="title">Profile Settings</span>
         </a>
-        <span class="tooltip">Setting</span>
+        <span class="tooltip">Profile Settings</span>
       </li>
       <li>
-        <a href="#" onclick="showLogoutModal()">
+        <a href="logout.php" onclick="showLogoutModal()">
           <i class='bx bx-power-off'></i>
           <span class="title">Logout</span>
         </a>
         <span class="tooltip">Logout</span>
       </li>
     </ul>
-    
+
     <!-- Logout button -->
   </div>
   <!-- Right Side Contents -->
@@ -94,15 +94,36 @@ if (!isset($_SESSION['username'])) {
   <!-- Default content -->
   <div id="default-content" class="db-right-content">
     <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
-    <div class="home-div-">
-
+    <div class="home-db-div">
+      <h2>Employee Board</h2>
+      <table>
+        <tr>
+          <th>Employee Name</th>
+          <th>Supervisor Name</th>
+          <th>Phone </th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+        <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
+      </table>
     </div>
   </div>
   <!-- END - Default content -->
 
-  <section id="leads" class="db-right-content">
-    <h1>Leads Content</h1>
-    <p>Here are the leads.</p>
+  <section id="supervisor" class="db-right-content">
+    <h1>Supervisor Accounts</h1>
+    <div class="home-db-div">
+      <table>
+        <tr>
+          <th>Employee Name</th>
+          <th>Supervisor Name</th>
+          <th>Phone </th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+        <?php viewEmployee(); ?> <!-- call the viewEmployee method to display employee data -->
+      </table>
+    </div>
   </section>
 
   <section id="teacher" class="db-right-content">
@@ -118,6 +139,7 @@ if (!isset($_SESSION['username'])) {
   <section id="qr-code" class="db-right-content">
     <h1>QR Code Content</h1>
     <p>Here is the QR code.</p>
+    <a href="employee_registration.php">Register Now</a>
   </section>
 
   <section id="setting" class="db-right-content">
@@ -131,10 +153,9 @@ if (!isset($_SESSION['username'])) {
   <!-- Logout modal -->
 
 
-<style>
- /* Modal styles */
-
-</style>
+  <style>
+    /* Modal styles */
+  </style>
   <!-- END - Logout modal -->
 
   <script src="./public/js/dashboardmain.js" async defer></script>
