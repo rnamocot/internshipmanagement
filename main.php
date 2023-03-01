@@ -20,10 +20,11 @@ if (!isset($_SESSION['username'])) {
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./public/styles/main.css">
   <link rel="icon" type="image/x-icon" href="./public/images/fav.png">
+  <script src="https://cdn.jsdelivr.net/npm/slugify"></script>
 </head>
 
 <body>
-  <div class="sidebarleft">
+  <div class="sidebarleft expand">
     <div class="nav-header">
       <p class="logo">OJT <br>
         <span class="db-username" style="color:#1e35cc;">Management</span>
@@ -31,11 +32,11 @@ if (!isset($_SESSION['username'])) {
       <i class="bx bx-menu-alt-right btn-menu"></i>
     </div>
     <ul class="nav-links">
-      <li>
+      <!-- <li>
         <i class="bx bx-search search-btn"></i>
         <input type="text" placeholder="search..." />
         <span class="tooltip">Search</span>
-      </li>
+      </li> -->
       <li>
         <a href="#" onclick="showContent('default-content')">
           <i class="bx bx-home-alt-2"></i>
@@ -93,9 +94,14 @@ if (!isset($_SESSION['username'])) {
 
   <!-- Default content -->
   <div id="default-content" class="db-right-content">
-    <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
+    <div class="db-right-header">
+      <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
+    </div>
     <div class="home-db-div">
-      <h2>Employee Board</h2>
+      <div class="table-header">
+        <h2>OJT-Employer List</h2>
+        <input class="form-control search-box" type="text" placeholder="Search name...">
+      </div>
       <table>
         <tr>
           <th>Employee Name</th>
@@ -111,8 +117,12 @@ if (!isset($_SESSION['username'])) {
   <!-- END - Default content -->
 
   <section id="supervisor" class="db-right-content">
-    <h1>Supervisor Accounts</h1>
+    <div class="db-right-header">
+      <h1>Welcome - <?php echo $_SESSION['username']; ?></h1>
+    </div>
     <div class="home-db-div">
+      <h1>Supervisor Accounts</h1>
+      <input class="form-control search-box" type="text" placeholder="Search name...">
       <table>
         <tr>
           <th>Employee Name</th>
@@ -139,7 +149,7 @@ if (!isset($_SESSION['username'])) {
   <section id="qr-code" class="db-right-content">
     <h1>QR Code Content</h1>
     <p>Here is the QR code.</p>
-    <a href="employee_registration.php">Register Now</a>
+    <a id="myAnchor" href="#">Register</a>
   </section>
 
   <section id="setting" class="db-right-content">
@@ -160,5 +170,15 @@ if (!isset($_SESSION['username'])) {
 
   <script src="./public/js/dashboardmain.js" async defer></script>
 </body>
+
+<script>
+  const slugify = new Slugify();
+  const name = 'John Doe';
+  const slug = slugify.slugify(name);
+
+  const registrationUrl = 'registration.php';
+  const anchorTag = document.getElementById('myAnchor');
+  anchorTag.href = registrationUrl + '?slug=' + slug;
+</script>
 
 </html>
